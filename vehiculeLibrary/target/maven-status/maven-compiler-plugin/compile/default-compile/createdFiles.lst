@@ -1,0 +1,6 @@
+vehicule\model\Vehicule.class
+vehicule\service\IVehicule.class
+vehicule\model\Proprietaire.class
+vehicule\service\IModele.class
+vehicule\service\IProprietaire.class
+vehicule\model\Modele.class

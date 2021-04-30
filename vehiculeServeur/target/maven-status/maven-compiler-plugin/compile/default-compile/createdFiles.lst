@@ -1,0 +1,5 @@
+vehicule\service\ProprietaireDao.class
+vehicule\utils\HibernateUtil.class
+vehicule\service\ModeleDao.class
+vehicule\service\VehiculeDao.class
+vehicule\App.class

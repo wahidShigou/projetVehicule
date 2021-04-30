@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="614.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehicule.controller.vehiculeController">
+   <children>
+      <Label layoutX="64.0" layoutY="52.0" prefHeight="17.0" prefWidth="75.0" text="Code" />
+      <Label layoutX="64.0" layoutY="94.0" prefHeight="17.0" prefWidth="75.0" text="Couleur" />
+      <Label layoutX="64.0" layoutY="139.0" prefHeight="17.0" prefWidth="75.0" text="Marque" />
+      <Label layoutX="64.0" layoutY="235.0" prefHeight="17.0" prefWidth="75.0" text="Model" />
+      <Label layoutX="64.0" layoutY="189.0" prefHeight="17.0" prefWidth="75.0" text="Proprietaire" />
+      <TextField fx:id="txtCode" editable="false" layoutX="149.0" layoutY="48.0" prefHeight="25.0" prefWidth="189.0" />
+      <TextField fx:id="txtCouleur" layoutX="149.0" layoutY="90.0" prefHeight="25.0" prefWidth="189.0" />
+      <TextField fx:id="txtMarque" layoutX="149.0" layoutY="135.0" prefHeight="25.0" prefWidth="189.0" />
+      <ChoiceBox fx:id="cbxProprietaire" layoutX="149.0" layoutY="185.0" prefHeight="25.0" prefWidth="189.0" />
+      <ChoiceBox fx:id="cbxModel" layoutX="149.0" layoutY="231.0" prefHeight="25.0" prefWidth="189.0" />
+      <Button fx:id="BtnEnregistrer" layoutX="59.0" layoutY="307.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="96.0" text="Enregistrer" />
+      <Button fx:id="BtnSupprimer" layoutX="196.0" layoutY="307.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="96.0" text="Supprimer" />
+      <Button fx:id="BtnModifier" layoutX="339.0" layoutY="307.0" mnemonicParsing="false" onAction="#Update" prefHeight="25.0" prefWidth="96.0" text="Modifier" />
+      <TableView fx:id="tableVehivule" layoutX="64.0" layoutY="377.0" prefHeight="209.0" prefWidth="645.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="121.0" text="Code" />
+          <TableColumn fx:id="colCouleur" prefWidth="130.0" text="Couleur" />
+            <TableColumn fx:id="colMarque" prefWidth="124.0" text="Marque" />
+            <TableColumn fx:id="colProprietaire" prefWidth="151.0" text="Proprietaire" />
+            <TableColumn fx:id="colModel" prefWidth="118.0" text="Model" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
